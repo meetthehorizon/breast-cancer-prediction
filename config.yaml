@@ -1,0 +1,26 @@
+# General configuration
+device: "cuda"
+data_path: "data/train"
+model_path: "logs/model"
+
+# Model A (FCNN) configuration
+model_fcnn:
+  lr: 0.001
+  epochs: 30
+  batch_size: 32
+  model_name: "FCNNBreastCancer"
+
+# Model B (CNN) configuration
+model_cnn:
+  lr: 0.001
+  epochs: 30
+  batch_size: 32
+  model_name: "CNNBreastCancer"
+
+# Model C (ResNet) configuration
+model_resnet:
+  lr: 0.0005 
+  epochs: 30
+  batch_size: 16  
+  model_name: "ResNetBreastCancer"
+
